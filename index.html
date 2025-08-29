@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ajay Marri | Python Developer & QA Analyst</title>
+
+    <!-- Fonts & Libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="min-h-screen bg-dark text-light">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 py-4 px-6 glass-card bg-black/50 backdrop-blur">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Ajay Marri</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#experience" class="hover:text-accent transition">Experience</a>
+                <a href="#education" class="hover:text-accent transition">Education</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#coding-profiles" class="hover:text-accent transition">Coding Profiles</a>
+                <a href="#certifications" class="hover:text-accent transition">Certifications</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-nav" class="hidden md:hidden flex flex-col space-y-4 mt-4 px-6">
+            <a href="#about" class="hover:text-accent transition">About</a>
+            <a href="#skills" class="hover:text-accent transition">Skills</a>
+            <a href="#experience" class="hover:text-accent transition">Experience</a>
+            <a href="#education" class="hover:text-accent transition">Education</a>
+            <a href="#projects" class="hover:text-accent transition">Projects</a>
+            <a href="#coding-profiles" class="hover:text-accent transition">Coding Profiles</a>
+            <a href="#certifications" class="hover:text-accent transition">Certifications</a>
+            <a href="#contact" class="hover:text-accent transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="min-h-screen flex items-center pt-20 px-6 relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-blue-900 opacity-10 blur-3xl"></div>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="about-section-details">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Hi, I'm <span class="gradient-text">Ajay Marri</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                    Python Developer & QA Analyst
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium hover:shadow-lg hover:shadow-blue-500/30 transition-all">
+                        Contact Me
+                    </a>
+                    <a class="px-8 py-3 rounded-full border-2 border-blue-500 text-blue-400 hover:bg-blue-500/10 transition-all" id="downloadCV">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="about-section-img">
+            <div class="relative">
+                <img src="images/profile.jpg" alt="Developer illustration" class="w-full max-w-md mx-auto animate-float"/>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- ======================================================================================================================================================================================================================================== -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+    <div class="skills-container">
+        <h2 class="section-title">
+        <span class="section-heading gradient-text">Technical Skills</span>
+        </h2>
+
+        <div class="skills-grid">
+        <!-- Development -->
+        <div class="skills-card">
+            <h3 class="card-title with-icon">
+            <svg class="icon accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+            <span>Development</span>
+            </h3>
+
+            <div class="skill-list">
+            <div class="skill-item">
+                <div class="skill-row">
+                <span>Python</span><span>90%</span>
+                </div>
+                <div class="progress">
+                <div class="progress-fill" style="--level: 90%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-row">
+                <span>Java</span><span>80%</span>
+                </div>
+                <div class="progress">
+                <div class="progress-fill" style="--level: 80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-row">
+                <span>Django</span><span>85%</span>
+                </div>
+                <div class="progress">
+                <div class="progress-fill" style="--level: 85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-row">
+                <span>SQL</span><span>80%</span>
+                </div>
+                <div class="progress">
+                <div class="progress-fill" style="--level: 80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-row">
+                <span>HTML/CSS</span><span>80%</span>
+                </div>
+                <div class="progress">
+                <div class="progress-fill" style="--level: 80%"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+      <!-- Testing -->
+      <div class="skills-card">
+        <h3 class="card-title with-icon">
+          <svg class="icon accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <span>Testing</span>
+        </h3>
+
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-row">
+              <span>Test Scenarios & Cases</span><span>95%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="--level: 95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span>API Testing</span><span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="--level: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span>Database Testing</span><span>95%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="--level: 95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span>Mobile & Web Apps</span><span>90%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="--level: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span>Regression Testing</span><span>90%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill" style="--level: 90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Platforms -->
+      <div class="skills-card">
+        <h3 class="card-title with-icon">
+          <svg class="icon accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2z"></path>
+          </svg>
+          <span>Tools & Platforms</span>
+        </h3>
+
+        <div class="tools-grid">
+          <div class="tool-pill">VS Code / PyCharm / SSMS</div>
+          <div class="tool-pill">Git / GitHub</div>
+          <div class="tool-pill">Agile Methodology</div>
+          <div class="tool-pill">AWS</div>
+          <div class="tool-pill">Terraform</div>
+          <div class="tool-pill">Docker</div>
+          <div class="tool-pill">Postman</div>
+          <div class="tool-pill">Azure DevOps</div>
+          <div class="tool-pill">Black-Box AI / GPT</div>
+          <div class="tool-pill">Excel / Word</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================================================================================================================================================================================== -->
+
+    <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+        <div class="experience-container">
+            <h2 class="section-title">
+            <span class="section-heading gradient-text">Professional Experience</span>
+            </h2>
+
+            <div class="experience-inner">
+            <div class="experience-card">
+
+                <!-- Job Header -->
+                <div class="job-header">
+                <div class="job-meta">
+                    <h3 class="job-title">Associate Software Engineer</h3>
+                    <p class="company-name">HealthOnUs Technologies Pvt Ltd, Hyderabad</p>
+                </div>
+                <p class="job-date">Dec 2023 – Jan 2025</p>
+                </div>
+
+                <!-- Experience 1 -->
+                <div class="job-block">
+                <h4 class="role-title">HealthOnUs App (Homecare Ordering System)</h4>
+                <ul class="experience-list">
+                    <li>Created and executed 100+ comprehensive test cases across modules like nursing, pharmacy, and consultations, identifying and logging 150+ defects.</li>
+                    <li>Improved API reliability by validating 50+ endpoints using Postman and Swagger, leading to a 25% drop in production bugs.</li>
+                    <li>Streamlined UI validation across Android and iOS platforms (Ionic + Angular), ensuring 95% design consistency.</li>
+                    <li>Supported 5+ production releases with regression and smoke testing, helping reduce release delays by 20%.</li>
+                    <li>Conducted product walkthroughs for clients, reducing post-deployment support tickets by 30%.</li>
+                </ul>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="job-block">
+                <h4 class="role-title">HonoNow App (Clinical Management System)</h4>
+                <ul class="experience-list">
+                    <li>Contributed to the design and development of a clinical management system to streamline hospital workflows.</li>
+                    <li>Developed responsive and user-friendly web interfaces using HTML, CSS, and JavaScript, improving usability for hospital staff and reducing time spent on form entries by 25%.</li>
+                    <li>Developed and enhanced modules for patient registration, appointment booking, admissions, and discharge management using Django and SQL-based backends.</li>
+                    <li>Collaborated with QA to conduct unit, integration, and regression testing; fixed issues related to workflow and data integrity.</li>
+                    <li>Contributed actively to Agile sprint ceremonies—including sprint planning and daily stand-ups—helping prioritize critical tasks and ensure consistent delivery.</li>
+                </ul>
+                </div>
+
+            </div>
+            </div>
+        </div>
+        </section>
+
+
+<!-- ======================================================================================================================================================================================================================================== -->
+
+
+    <!-- Education Section -->
+        <section id="education" class="education-section">
+        <div class="education-container">
+            <h2 class="section-title">
+            <span class="section-heading gradient-text">Education</span>
+            </h2>
+
+            <div class="education-inner">
+            <!-- B.Tech -->
+            <article class="education-card">
+                <div class="degree-header">
+                <h3 class="degree-title">B.Tech in Computer Science and Engineering</h3>
+                <p class="degree-year">2019 – 2023</p>
+                </div>
+                <p class="institute-name">Bharath Institute of Higher Education and Research University, Chennai</p>
+                <p class="cgpa-text">CGPA: 9.1 (Approx. 86.4%)</p>
+            </article>
+
+            <!-- Intermediate -->
+            <article class="education-card">
+                <div class="degree-header">
+                <h3 class="degree-title">Intermediate (MPC)</h3>
+                <p class="degree-year">2017 – 2019</p>
+                </div>
+                <p class="institute-name">Narayana Junior College, Visakhapatnam</p>
+                <p class="cgpa-text">CGPA: 9.44 (Approx. 89.5%)</p>
+            </article>
+
+            <!-- Secondary -->
+            <article class="education-card">
+                <div class="degree-header">
+                <h3 class="degree-title">Secondary Education</h3>
+                <p class="degree-year">2017</p>
+                </div>
+                <p class="institute-name">Ravindra Bharathi School, Yelamanchili</p>
+                <p class="cgpa-text">CGPA: 9.3 (Approx. 88.4%)</p>
+            </article>
+            </div>
+        </div>
+        </section>
+
+<!-- ======================================================================================================================================================================================================================================== -->
+
+    <!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <div class="projects-container">
+    <h2 class="section-title">
+      <span class="section-heading gradient-text">Projects</span>
+    </h2>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="project-card">
+        <h3 class="project-title">Blog / News Web Application (Django)</h3>
+
+        <p class="project-desc">
+          Developed a fully functional dynamic blog platform using Django framework with complete CRUD operations.
+        </p>
+
+        <ul class="project-list">
+          <li>Developed a responsive blog-style application to manage and publish news articles efficiently.</li>
+          <li>Designed RESTful URL structures using function-based and class-based views for scalable routing.</li>
+          <li>Used Django templates and static files for reusable responsive layouts and assets.</li>
+          <li>Created models for posts, authors, tags and comments with proper relationships via Django ORM.</li>
+          <li>Customized Django admin to manage posts, tags and uploads with search and filters.</li>
+          <li>Built secure forms with ModelForm, custom validation and CSRF protection.</li>
+          <li>Implemented media uploads for post images with secure storage and display.</li>
+          <li>Leveraged Class-Based Views (ListView, DetailView, CreateView) for maintainable code.</li>
+          <li>Added session-based “read later” functionality without requiring login.</li>
+        </ul>
+
+        <div class="tech-stack">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Django</span>
+          <span class="tech-pill">SQL</span>
+        </div>
+
+        <!-- GitHub Button -->
+        <a href="https://github.com/Ajay-Marri/projects" target="_blank" class="github-link">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="github-icon">
+          View on GitHub
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================================================================================================================================================================================== -->
+
+
+    <!-- Coding Profiles Section -->
+        <section id="coding-profiles" class="coding-section">
+        <div class="coding-container">
+            <h2 class="coding-title">Coding Profiles</h2>
+            <div class="coding-grid">
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/Ajay_Marri/" target="_blank" class="coding-card">
+                <h3 class="coding-card-title">LeetCode</h3>
+                <p class="coding-card-desc">View my solved problems and contests on LeetCode.</p>
+            </a>
+
+            <!-- TakeUForward -->
+            <a href="https://takeuforward.org/profile/ajaymarri1602@gmail.com" target="_blank" class="coding-card">
+                <h3 class="coding-card-title">TakeUForward</h3>
+                <p class="coding-card-desc">Explore my DSA journey on TakeUForward.</p>
+            </a>
+
+            <!-- GeeksforGeeks -->
+            <a href="https://www.geeksforgeeks.org/user/ajaymarpyuo/" target="_blank" class="coding-card">
+                <h3 class="coding-card-title">GeeksforGeeks</h3>
+                <p class="coding-card-desc">Check out my articles and problem-solving on GFG.</p>
+            </a>
+            </div>
+        </div>
+        </section>
+
+<!-- ======================================================================================================================================================================================================================================== -->
+<!-- Certifications Section -->
+<section id="certifications">
+    <div class="container">
+        <h2 class="section-title">My Certifications</h2>
+        
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Original Images -->
+                    <img src="images/cert2.jpg" alt="Certificate 1">
+                    <img src="images/cert3.jpg" alt="Certificate 2">
+                    <img src="images/cert4.jpg" alt="Certificate 3">
+                    <img src="images/cert5.jpg" alt="Certificate 4">
+                    <img src="images/cert6.jpg" alt="Certificate 5">
+                    <img src="images/cert1.jpg" alt="Certificate 6">
+
+                    <!-- Duplicate Images for seamless scroll -->
+                    <img src="images/cert2.jpg" alt="Certificate 1">
+                    <img src="images/cert3.jpg" alt="Certificate 2">
+                    <img src="images/cert4.jpg" alt="Certificate 3">
+                    <img src="images/cert5.jpg" alt="Certificate 4">
+                    <img src="images/cert6.jpg" alt="Certificate 5">
+                    <img src="images/cert1.jpg" alt="Certificate 6">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ======================================================================================================================================================================================================================================== -->
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2 class="section-title">
+      <span class="section-heading gradient-text">Get In Touch</span>
+    </h2>
+
+    <div class="contact-card">
+      <div class="contact-grid">
+        <!-- Left column: contact info -->
+        <div class="contact-info">
+          <h3 class="contact-heading">Contact Information</h3>
+
+          <div class="contact-list">
+            <!-- Email -->
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                   role="img" focusable="false">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              <div class="contact-text">
+                <p class="contact-label">Email</p>
+                <p class="contact-value">
+                  <a class="contact-link" href="mailto:ajaymarri1808@gmail.com">ajaymarri1808@gmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                   role="img" focusable="false">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              <div class="contact-text">
+                <p class="contact-label">Phone</p>
+                <p class="contact-value">
+                  <a class="contact-link" href="tel:+917674817665">+91 7674817665</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                   role="img" focusable="false">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <div class="contact-text">
+                <p class="contact-label">Location</p>
+                <p class="contact-value">Hyderabad, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: contact form (optional) -->
+        <!-- <div class="contact-form-wrapper">
+          <form class="contact-form" action="#" autocomplete="on" novalidate>
+            <div class="form-row">
+              <label class="form-label" for="name">Name</label>
+              <input id="name" class="form-input" type="text" name="name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="email">Email</label>
+              <input id="email" class="form-input" type="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="message">Message</label>
+              <textarea id="message" class="form-input form-textarea" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <div class="form-row">
+              <button type="submit" class="form-button">Send Message</button>
+            </div>
+          </form>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+</section>
+        
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.about-section-details', { origin: 'left', distance: '50px', duration: 1000, delay: 300 });
+        ScrollReveal().reveal('.about-section-img', { origin: 'right', distance: '50px', duration: 1000, delay: 500 });
+        ScrollReveal().reveal('nav .container', { origin: 'top', distance: '50px', duration: 1000, delay: 500 });
+    </script>
+</body>
+</html>
